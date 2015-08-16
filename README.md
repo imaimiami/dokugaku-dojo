@@ -2,6 +2,12 @@
 
 #### Getting Started
 
+```
+npm install --global gulp bower
+npm install
+bower install
+```
+
 - Run `gulp serve` to preview and watch for changes
 - Run `bower install --save <package>` to install frontend  dependencies
 - Run `gulp serve:test` to run the tests in the browser
