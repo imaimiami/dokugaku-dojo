@@ -5,8 +5,14 @@ $icon-font-path: '../fonts/';
 @import "app/styles/color-schema.scss";
 // endbower
 
+@import url("//fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+
 * {
   outline: 0;
+}
+
+body {
+  font-family: 'YuGothic', 'Yu Gothic', '游ゴシック', '游ゴシック体', 'Noto Sans Japanese', sans-serif;
 }
 
 a {
