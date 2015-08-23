@@ -96,6 +96,23 @@ body {
   }
 }
 
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  .thumbnail {
+    flex: 1 1 auto;
+    display: block;
+    border: 0;
+    padding: 0;
+    width: 33%;
+    margin: 0;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0;
+  }
+}
+
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
