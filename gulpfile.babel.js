@@ -89,7 +89,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'fonts'], () => {
+gulp.task('serve', ['styles', 'fonts', 'images'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -110,6 +110,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
   gulp.watch('app/fonts/**/*', ['fonts']);
+  gulp.watch('app/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
