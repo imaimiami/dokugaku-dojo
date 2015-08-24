@@ -221,6 +221,15 @@ body {
   }
 }
 
+.member-section {
+  display: flex;
+  justify-content: center;
+  .member {
+    flex: 0 0 180px;
+    margin: 0 40px;
+  }
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
