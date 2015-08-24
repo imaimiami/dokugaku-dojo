@@ -179,7 +179,7 @@ body {
     font-size: 14px;
     text-align: center;
     color: $section-lead-color;
-    margin-top: 8px;
+    margin: 16px 0 52px;
   }
   .marketing-btn {
     @include btn;
@@ -188,6 +188,35 @@ body {
   }
   p + h4 {
     margin-top: 28px;
+  }
+}
+
+.flow-section {
+  display: flex;
+  margin-bottom: 24px;
+  .flow-image {
+    flex: 3;
+    background-size: cover;
+  }
+  .flow-body {
+    flex: 2;
+    padding: 20px 24px;
+    height: 300px;
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      color: $text-color;
+    }
+    p {
+      margin-top: 40px;
+      font-size: 14px;
+      color: $sub-text-color;
+    }
+  }
+  &.odd {
+    .flow-image {
+      order: 2;
+    }
   }
 }
 
