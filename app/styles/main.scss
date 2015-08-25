@@ -121,6 +121,8 @@ body {
     font-size: 46px;
     .glyphicon-menu-right {
       color: $theme-color;
+      font-size: 40px;
+      margin-right: 8px;
     }
   }
   .lead {
@@ -177,6 +179,8 @@ body {
     &:before {
       content: '\e258';
       font-family: 'Glyphicons Halflings';
+      font-size: 21px;
+      margin-right: 4px;
     }
   }
   p.lead {
