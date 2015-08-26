@@ -163,6 +163,7 @@ body {
     margin: 0;
     height: 200px;
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     border-radius: 0;
   }
@@ -170,7 +171,11 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
+  margin: 12px 0;
+  padding: 14px 0 24px;
+  .col-lg-12 {
+    padding: 0
+  }
   h3 {
     font-size: 24px;
     font-weight: normal;
@@ -187,7 +192,7 @@ body {
     font-size: 14px;
     text-align: center;
     color: $section-lead-color;
-    margin: 16px 0 52px;
+    margin: 28px 0 54px;
   }
   .marketing-btn {
     @include btn;
@@ -197,18 +202,25 @@ body {
   p + h4 {
     margin-top: 28px;
   }
+  &.gray {
+    background-color: $gray-background-color;
+  }
 }
 
 .flow-section {
   display: flex;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  background-image: linear-gradient(to bottom, #fff, #f3f3f3);
   .flow-image {
     flex: 3;
     background-size: cover;
+    background-position: center center;
+    min-height: 340px;
+    margin: 24px 30px;
   }
   .flow-body {
     flex: 2;
-    padding: 20px 24px;
+    padding: 42px 32px;
     height: 300px;
     h4 {
       font-size: 20px;
