@@ -201,6 +201,7 @@ body {
     font-size: 14px;
     text-align: center;
     color: $section-lead-color;
+    margin: 18px 0 36px;
   }
   .marketing-btn {
     @include btn;
@@ -218,6 +219,7 @@ body {
 #flow-section {
   padding: 12px 0 24px;
   p.lead {
+    // margin-bottom: 12px;
     margin-right: 24px;
     margin-left: 24px;
   }
@@ -264,7 +266,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   .member {
-    flex: 0 0 320px;
+    flex: 0 0 300px;
     margin: 0 40px 24px;
     p {
       margin-bottom: 6px;
