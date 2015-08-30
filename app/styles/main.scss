@@ -26,10 +26,13 @@ a {
   background-color: transparent;
   padding: 16px 32px 14px;
   border-radius: 3px;
+  text-decoration: none;
+  display: inline-block;
   &:hover {
     color: $btn-color;
     border: 2px solid $btn-color;
     background-color: $btn-highlight-color;
+    text-decoration: none;
   }
   &:active {
     color: $btn-color;
@@ -205,8 +208,6 @@ body {
   }
   .marketing-btn {
     @include btn;
-    display: block;
-    margin: 0 auto;
   }
   p + h4 {
     margin-top: 28px;
@@ -214,6 +215,10 @@ body {
   &.gray {
     background-color: $gray-background-color;
   }
+}
+
+#apply-section {
+  text-align: center;
 }
 
 #flow-section {
