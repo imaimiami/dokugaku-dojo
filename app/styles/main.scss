@@ -193,7 +193,6 @@ body {
     font-size: 14px;
     text-align: center;
     color: $section-lead-color;
-    margin: 28px 0 54px;
   }
   .marketing-btn {
     @include btn;
@@ -205,6 +204,14 @@ body {
   }
   &.gray {
     background-color: $gray-background-color;
+  }
+}
+
+#flow-section {
+  padding: 12px 0 24px;
+  p.lead {
+    margin-right: 24px;
+    margin-left: 24px;
   }
 }
 
@@ -250,7 +257,7 @@ body {
   justify-content: center;
   .member {
     flex: 0 0 320px;
-    margin: 0 40px;
+    margin: 0 40px 24px;
     p {
       margin-bottom: 6px;
       color: $description-color;
@@ -261,7 +268,7 @@ body {
       font-size: 14px;
       font-weight: bold;
       // width: 180px;
-      text-align: left;
+      text-align: center;
     }
     .description {
     }
@@ -303,9 +310,9 @@ body {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
-    max-width: 730px;
+    // max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -319,10 +326,61 @@ body {
   /* Space out the masthead */
   .header {
     // margin-bottom: 30px;
+    .nav {
+      display: none;
+    }
+    h3 {
+      text-align: center;
+      margin-left: -20px;
+    }
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .container-fluid {
+    .jumbotron {
+      // border-bottom: 0;
+      height: 380px;
+      .jumbotron-inner {
+        padding: 32px 24px;
+        h1 {
+          font-size: 32px;
+          .glyphicon-menu-right {
+              font-size: 24px;
+          }
+        }
+        .lead {
+          width: 100%;
+          padding: 24px 12px;
+        }
+      }
+    }
+    .marketing {
+      padding: 14px 24px 24px;
+      .lead {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .flow-section {
+    .flow-image {
+      flex: auto;
+      margin: 0;
+    }
+    .flow-body {
+      flex: auto;
+      height: auto;
+      padding: 18px 24px 42px;
+    }
+    &.odd {
+      flex-wrap: wrap-reverse;
+      .flow-image {
+        margin: 0;
+      }
+    }
+  }
+  .thumbnails {
+    .thumbnail {
+      width: 50%;
+    }
   }
 }
