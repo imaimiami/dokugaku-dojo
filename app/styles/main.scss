@@ -5,14 +5,14 @@ $icon-font-path: '../fonts/';
 @import "app/styles/color-schema.scss";
 // endbower
 
-@import url("//fonts.googleapis.com/earlyaccess/notosansjapanese.css");
+// @import url("//fonts.googleapis.com/earlyaccess/notosansjapanese.css");
 
 * {
   outline: 0;
 }
 
 body {
-  font-family: 'YuGothic', 'Yu Gothic', '游ゴシック', '游ゴシック体', 'Noto Sans Japanese', sans-serif;
+  font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 a {
@@ -113,6 +113,9 @@ body {
   border-top: 1px solid #e5e5e5;
   background: $footer-background-color;
   color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 /* Main marketing message and sign up button */
