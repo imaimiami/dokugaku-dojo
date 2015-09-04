@@ -104,6 +104,9 @@ body {
         a {
           color: $link-color;
         }
+        &:hover {
+          background-color: $btn-highlight-color;
+        }
         border: 1px solid $link-color;
         margin-left: 12px;
         border-radius: 3px;
@@ -194,12 +197,13 @@ body {
 /* Supporting marketing content */
 .marketing {
   margin: 12px 0;
-  padding: 14px 0 24px;
+  padding: 14px 0 36px;
   .col-lg-12 {
     padding: 0
   }
   h3 {
     font-size: 24px;
+    margin: 52px 0 0;
     font-weight: normal;
     text-align: center;
     color: $section-title-color;
@@ -250,11 +254,11 @@ body {
     background-size: cover;
     background-position: center center;
     min-height: 340px;
-    margin: 42px 36px 42px 0;
+    margin: 42px 0 42px 0;
   }
   .flow-body {
     flex: 2.5;
-    padding: 42px 64px;
+    padding: 62px 32px 62px 32px;
     height: 300px;
     h4 {
       font-size: 20px;
@@ -268,10 +272,21 @@ body {
       color: $sub-text-color;
     }
   }
+  &.first {
+    .flow-image {
+      // margin: 12px 36px 42px 0;
+    }
+    .flow-body {
+      padding: 12px 42px 62px 42px;
+    }
+  }
   &.odd {
+    .flow-body {
+      // padding: 62px 8px 62px 42px;
+    }
     .flow-image {
       order: 2;
-      margin: 42px 0 42px 36px;
+      margin: 42px 0 42px 0;
     }
   }
 }
@@ -386,7 +401,7 @@ body {
       }
     }
     .marketing {
-      padding: 14px 24px 24px;
+      padding: 14px 24px 42px;
       .lead {
         margin-bottom: 32px;
       }
