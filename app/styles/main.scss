@@ -247,11 +247,12 @@ body {
 .flow-section {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 24px;
+  padding: 24px 0;
   background-image: linear-gradient(to bottom, #fff, #f3f3f3);
   .flow-image {
     flex: 3;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
     min-height: 340px;
     margin: 42px 0 42px 0;
@@ -273,11 +274,12 @@ body {
     }
   }
   &.first {
+    padding: 0 0 24px;
     .flow-image {
       // margin: 12px 36px 42px 0;
     }
     .flow-body {
-      padding: 12px 42px 62px 42px;
+      padding: 48px 42px 62px 12px;
     }
   }
   &.odd {
