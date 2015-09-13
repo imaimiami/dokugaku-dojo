@@ -417,7 +417,12 @@ body {
     .flow-body {
       flex: auto;
       height: auto;
-      padding: 18px 24px 42px;
+      padding: 0 24px 42px;
+    }
+    &.first {
+      .flow-body {
+        padding: 0 24px 42px;
+      }
     }
     &.odd {
       flex-wrap: wrap-reverse;
