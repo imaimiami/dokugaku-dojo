@@ -27,6 +27,14 @@
     <!-- endbuild -->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -103,7 +111,7 @@
           <div class="thumbnail" style="background-image: url('./images/activity-02.jpg');"></diV>
           <div class="thumbnail" style="background-image: url('./images/screen-02.png');"></diV>
           <div class="thumbnail" style="background-image: url('./images/activity-01.jpg');"></diV>
-          <div class="thumbnail" style="background-image: url('./images/activity-01.jpg');"></diV>
+          <div class="thumbnail" style="background-image: url('./images/meetup-07.jpg');"></diV>
             <div class="thumbnail" style="background-image: url('./images/meetup-05.jpg');"></diV>
               <div class="thumbnail" style="background-image: url('./images/meetup-06.jpg');"></diV>
         </div>
@@ -182,15 +190,22 @@
 
       <div class="footer">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-md-4">
             <p><img src="./images/dokugaku-dojo-logo-2.png" alt="Dokugaku Dojo" class="logo" /></p>
             <p>世界中に勉強仲間をつくるオンライン自習室</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-3">
             <ul class="list-unstyled">
-              <!-- <li>Twitter</li> -->
-              <li><a href="https://www.facebook.com/dokugakudojo" target="_blank">Facebook</a></li>
+              <!-- <li>Twitter</li>
+              <li><a href="https://www.facebook.com/dokugakudojo" target="_blank">Facebook</a></li> -->
+              <li><a href="#top-section">トップ</a></li>
+              <li><a href="#flow-section">Dojoの仕組み</a></li>
+              <li><a href="#member-section">主催者</a></li>
+              <li><a href="#apply-section">申し込み</a></li>
             </ul>
+          </div>
+          <div class="col-md-5">
+            <div class="fb-page" data-href="https://www.facebook.com/dokugaku-dojo" data-width="500" data-height="280" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/dokugaku-dojo"><a href="https://www.facebook.com/dokugaku-dojo">Dokugaku-Dojo</a></blockquote></div></div>
           </div>
         </div>
       </div>

@@ -117,7 +117,7 @@ body {
 
 /* Custom page footer */
 .footer {
-  min-height: 200px;
+  min-height: 400px;
   padding-top: 42px;
   color: #777;
   border-top: 1px solid #e5e5e5;
@@ -259,7 +259,7 @@ body {
   }
   .flow-body {
     flex: 2.5;
-    padding: 62px 32px 62px 32px;
+    padding: 62px 62px 62px 24px;
     height: 300px;
     h4 {
       font-size: 22px;
@@ -279,12 +279,12 @@ body {
       // margin: 12px 36px 42px 0;
     }
     .flow-body {
-      padding: 48px 42px 62px 12px;
+      padding: 48px 62px 62px 24px;
     }
   }
   &.odd {
     .flow-body {
-      // padding: 62px 8px 62px 42px;
+      padding: 62px 24px 62px 62px;
     }
     .flow-image {
       order: 2;
@@ -413,15 +413,21 @@ body {
     .flow-image {
       flex: auto;
       margin: 0;
+      min-height: 240px;
     }
     .flow-body {
       flex: auto;
       height: auto;
-      padding: 0 24px 42px;
+      padding: 8px 24px 42px;
+      p {
+        margin-top: 12px;
+      }
+
     }
-    &.first {
+    &.first, &.odd {
       .flow-body {
-        padding: 0 24px 42px;
+        padding: 8px 24px 42px;
+
       }
     }
     &.odd {
